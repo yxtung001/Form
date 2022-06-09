@@ -10,16 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Staatliches&display=swap" rel="stylesheet">
-  </head>
+<canvas id="mouse"></canvas>  
+</head>
   <body>
     <main>
+      
       <h1  id="title">Short Survey</h1>
       <p id="description">Fill up all the following form</p>
       
     </main>
+     
     
     <form id="survey-form" action="https://register-demo.freecodecamp.org">
-
+      
       <fieldset id="intro">
         <div>
         <label id="name-label" >Enter Your First Name:</label> 
@@ -41,7 +44,7 @@
       </fieldset>
       <fieldset>
         <label id="userages">age:<input type="number" min="12" max="100" value="12" id="number" placeholder="12"> </label>
-        <label>Roles:
+        <label for="dropdown">Roles:
         <select required id="dropdown">
           <option name="0" disabled selected>(Choose one)</option>
           <option name="1">Student</option>
@@ -77,7 +80,11 @@
         
       </fieldset>
       <input type="submit" id="submit" >
+      <canvas id="mouse"></canvas> 
     </form>
-
+    
+    
+    
   </body>
+  <script src="mouse.js"></script>
 </html>

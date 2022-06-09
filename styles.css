@@ -7,6 +7,7 @@ body{
   font-family: 'Staatliches', cursive;
   text-shadow:0px 3px 5px black;
   
+  
 }
 
 h1{
@@ -49,7 +50,7 @@ form{
   min-width:540px;
   width:580px;
   margin:0 auto;
-  position:relative;
+  
   
   
   
@@ -107,6 +108,7 @@ input{
 
 input[type="number"]{
   width:50px;
+  position: relative;
 }
 
 .radio{
@@ -157,11 +159,13 @@ textarea{
   color:#a1a1a1;
   transition:0.6s;
   border-radius:5px;
+  position: relative;
 }
 
 input[type="submit"]{
   text-align:center;
   width:570px;
+  position: relative;
   
 }
 
@@ -234,7 +238,8 @@ select{
   color:#a1a1a1;
   font-family: 'Aldrich', sans-serif;
   transition:0.6s;
-  padding-left:150px
+  padding-left:150px;
+  position:relative;
   
   
   
@@ -268,12 +273,13 @@ select:focus{
 
 option{
     padding:unset;
+    position: relative;
 }
 
 input[type="range"]{
   vertical-align:middle;
   border-radius:10cm;
-  
+  position: relative;
   
   
 }
@@ -295,6 +301,7 @@ input[type="range"]:focus{
 input[type="checkbox"]{
   box-shadow:none;
   color:blue;
+  position: relative;
 }
 
 
@@ -315,3 +322,10 @@ input[type="checkbox"]{
     margin-bottom: 0px;
   }
 }
+
+#mouse{
+  position: absolute;
+
+  z-index: 0;
+}
+
